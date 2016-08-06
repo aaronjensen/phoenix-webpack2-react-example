@@ -14,7 +14,6 @@ module.exports = {
   entry: {
     js: [
       'webpack/hot/dev-server',
-      'react-hot-loader/patch',
       './app',
     ],
   },

@@ -1,7 +1,7 @@
-// import '../../../deps/phoenix/priv/static/phoenix'
-// import '../../../deps/phoenix_html/priv/static/phoenix_html'
+import '../../../deps/phoenix/priv/static/phoenix'
+import '../../../deps/phoenix_html/priv/static/phoenix_html'
 
-// import 'babel-polyfill'
+import 'babel-polyfill'
 
 import React from 'react'
 import { render } from 'react-dom'

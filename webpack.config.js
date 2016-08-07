@@ -25,6 +25,9 @@ module.exports = {
     devtoolModuleFilenameTemplate: '/[absolute-resource-path]',
   },
   module: {
+    preLoaders: [
+      {test: /\.js$/, loader: "flowtype", exclude: /node_modules/},
+    ],
     loaders: [
       {
         test: /\.css$/,

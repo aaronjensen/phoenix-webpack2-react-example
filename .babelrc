@@ -1,4 +1,11 @@
 {
-  "presets": [["es2015", { "modules": false }], "react", "react-hmre"],
-  "plugins": ["transform-class-properties"]
+  "presets": [
+    ["es2015", { "modules": false }],
+    "react",
+    "react-hmre"
+  ],
+  "plugins": [
+    "transform-class-properties",
+    "transform-flow-strip-types"
+  ]
 }

@@ -7,20 +7,22 @@ const isProd = nodeEnv === 'production'
 const staticDir = path.join(__dirname, 'web/static')
 const jsDir = path.join(staticDir, 'js')
 const destDir = path.join(__dirname, 'priv/static')
+const publicPath = 'http://localhost:4001/'
 
 module.exports = {
-  devtool: isProd ? 'hidden-source-map' : 'cheap-eval-source-map',
+  devtool: isProd ? 'hidden-source-map' : 'eval',
   context: jsDir,
   entry: {
     js: [
-      'webpack/hot/dev-server',
+      `webpack-hot-middleware/client?path=${publicPath}__webpack_hmr`,
       './app',
     ],
   },
   output: {
     path: destDir,
     filename: 'bundle.js',
-    publicPath: 'http://localhost:8080/',
+    publicPath,
+    devtoolModuleFilenameTemplate: '/[absolute-resource-path]',
   },
   module: {
     loaders: [
@@ -55,6 +57,7 @@ module.exports = {
     // }),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin(),
+    new webpack.NoErrorsPlugin(),
     // new webpack.LoaderOptionsPlugin({
     //   minimize: true,
     //   debug: false

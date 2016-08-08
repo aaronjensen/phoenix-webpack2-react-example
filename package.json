@@ -1,7 +1,9 @@
 {
   "private": true,
   "scripts": {
-    "start": "node devServer.js"
+    "start": "node devServer.js",
+    "styleguide-server": "styleguidist server",
+    "styleguide-build": "styleguidist build"
   },
   "devDependencies": {
     "babel-cli": "^6.11.4",
@@ -21,6 +23,7 @@
     "file-loader": "^0.9.0",
     "flow-bin": "^0.30.0",
     "flowtype-loader": "^0.2.0",
+    "react-styleguidist": "github:aaronjensen/react-styleguidist#webpack2",
     "style-loader": "^0.13.1",
     "webpack": "^2.1.0-beta.20",
     "webpack-dev-middleware": "^1.6.1",

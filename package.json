@@ -21,6 +21,8 @@
     "file-loader": "^0.9.0",
     "flow-bin": "^0.30.0",
     "flowtype-loader": "^0.2.0",
+    "gulp": "^3.9.1",
+    "react-bluekit": "^0.2.7",
     "style-loader": "^0.13.1",
     "webpack": "^2.1.0-beta.20",
     "webpack-dev-middleware": "^1.6.1",

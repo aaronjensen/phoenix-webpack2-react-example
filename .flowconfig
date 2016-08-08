@@ -1,5 +1,14 @@
 [options]
 suppress_type=$FlowIssue
+esproposal.class_instance_fields=enable
+esproposal.class_static_fields=enable
 
 [libs]
 ./node_modules/fbjs/flow/lib
+
+[ignore]
+.*/node_modules/systemjs-builder/.*
+.*/node_modules/reactcss/node_modules/fbjs/.*
+.*/node_modules/react-color/.*
+.*/node_modules/radium/.*
+.*/node_modules/findup/.*

@@ -2,7 +2,11 @@
 import React from 'react'
 
 export default class Title extends React.Component {
+  props: {
+    name?: string
+  }
+
   render() {
-    return <h1>Hello world3</h1>
+    return <h1>Hello {this.props.name}</h1>
   }
 }
